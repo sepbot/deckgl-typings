@@ -1423,6 +1423,9 @@ declare module "@deck.gl/core/viewports/viewport" {
 		}): any;
 		_initProjectionMatrix(opts: any): void;
 		_initPixelMatrices(): void;
+
+		width: number;
+		height: number;
 	}
 }
 declare module "@deck.gl/core/lib/layer-manager" {
@@ -2234,7 +2237,7 @@ declare module "@deck.gl/core/lib/deck" {
 		object: D;
 		x: number;
 		y: number;
-		coordinate?: {};
+		coordinate?: number[];
 	}
 
 	// https://deck.gl/docs/api-reference/core/deck#viewstate
