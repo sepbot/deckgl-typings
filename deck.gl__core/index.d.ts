@@ -1424,6 +1424,8 @@ declare module "@deck.gl/core/viewports/viewport" {
 		_initProjectionMatrix(opts: any): void;
 		_initPixelMatrices(): void;
 
+		getBounds(): number[][];
+
 		width: number;
 		height: number;
 	}
