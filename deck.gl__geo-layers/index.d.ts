@@ -234,7 +234,7 @@ declare module "@deck.gl/geo-layers/tile-layer/tile-layer" {
 		extent?: [number, number, number, number];
 
 		//Render Options
-		renderSubLayers?: () => Layer<any> | Layer<any>[];
+		renderSubLayers?: (props: any) => Layer<any> | Layer<any>[];
 		zRange?: [number, number];
 
 		//Callbacks
@@ -445,9 +445,9 @@ declare module "@deck.gl/geo-layers/terrain-layer/terrain-layer" {
 		texture?: string | null;
 		meshMaxError?: number;
 		elevationDecoder?: {
-			rScale: number;
-			gScale: number;
-			bScale: number;
+			rScaler: number;
+			gScaler: number;
+			bScaler: number;
 			offset: number;
 		};
 		bounds?: number[];
